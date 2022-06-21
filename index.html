@@ -7,146 +7,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🪂Guia Hoteles</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
     <meta name="author" content="Omar Ramírez" />
     <meta name="description" content="Protecto Coursera curso desarrollador full stack" />
 </head>
 
 <body>
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Reservaciones</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Ofertas</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Mas populares</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Preguntas frecuentes</a>
-        </li>
-    </ul>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>🪂Guia Hoteles</h1>
-            </div>
+    <header class="header">
+        <div class="jumbotron">
+            <h3>Hoteles</h3>
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <form action="index.php" method="post">
-                    <div class="form-group">
-                        <label for="">Nombre</label>
-                        <input type="text" name="nombre" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Email</label>
-                        <input type="email" name="email" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Telefono</label>
-                        <input type="text" name="telefono" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Fecha de llegada</label>
-                        <input type="date" name="fecha_llegada" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Fecha de salida</label>
-                        <input type="date" name="fecha_salida" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Cantidad de personas</label>
-                        <input type="number" name="cantidad_personas" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Tipo de habitacion</label>
-                        <select name="tipo_habitacion" class="form-control">
-                            <option value="">Seleccione</option>
-                            <option value="Simple">Simple</option>
-                            <option value="Doble">Doble</option>
-                            <option value="Triple">Triple</option>
-                            <option value="Cuadruple">Cuadruple</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="">¿Desea alojamiento?</label>
-                        <select name="alojamiento" class="form-control">
-                            <option value="">Seleccione</option>
-                            <option value="Si">Si</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="">¿Desea transporte?</label>
-                        <select name="transpote" class="form-control">
-                            <option value="">Seleccione</option>
-                            <option value="Si">Si</option>
-                            <option value="No">No</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Reservar</button>
-                    <!--Prueba alineacion de contenido bootstrap-->
-                    <h3 class="row justify-content-center">Alineacion usando Justify-Content de Bootstrap</h3>
-                    <div class="container">
-                        <p class="row justify-content-center">Justificación al inicio usando justify-content-start</p>
-                        <div class="row justify-content-start">
-                            <div class="col-4">
-                                One of two columns
-                            </div>
-                            <div class="col-4">
-                                One of two columns
-                            </div>
-                        </div>
-                        <p class="row justify-content-center">Justificación al centro usando justify-content-center</p>
-                        <div class="row justify-content-center">
-                            <div class="col-4">
-                                One of two columns
-                            </div>
-                            <div class="col-4">
-                                One of two columns
-                            </div>
-                        </div>
-                        <p class="row justify-content-center">Justificación al final usando justify-content-end</p>
-                        <div class="row justify-content-end">
-                            <div class="col-4">
-                                One of two columns
-                            </div>
-                            <div class="col-4">
-                                One of two columns
-                            </div>
-                        </div>
-                        <p class="row justify-content-center">Justificación usando justify-content-around</p>
-                        <div class="row justify-content-around" <div class="col-4">
-                            One of two columns
-                        </div>
-                        <div class="col-4">
-                            One of two columns
-                        </div>
-                    </div>
-                    <p class="row justify-content-center">Justificación usando justify-content-betwen</p>
-                    <div class="row justify-content-between">
-                        <div class="col-4">
-                            One of two columns
-                        </div>
-                        <div class="col-4">
-                            One of two columns
-                        </div>
-                    </div>
-                    <p class="row justify-content-center">Justificación usando justify-content-evenly</p>
-                    <div class="row justify-content-evenly">
-                        <div class="col-4">
-                            One of two columns
-                        </div>
-                        <div class="col-4">
-                            One of two columns
-                        </div>
-                    </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <p>
+                    <h3>¿Cómo funciona?</h3>
+                    <p>Busca los hoteles de acuerdo a tu preferencia</p>
+                    </p>
+                </div>
+                <!--fin col-sm-4 cómo funciona-->
+                <div class="col-sm-4">
+                    <p>
+                    <h3>¿Dónde puedo reservar?</h3>
+                    <p>Elige la ciudad que te interese y luego realizá la reserva con tus datos.</p>
+                    </p>
+                </div>
+                <!--fin col-sm-4 dónde reservar-->
+                <div class="col-sm-4">
+                    <p>
+                    <h3>¿Cómo pago?</h3>
+                    <p>Utilizá tu tarjeta favorita</p>
+                    </p>
+                </div>
+                <!--fin col-sm-4 cómo pago-->
             </div>
+            <!--fin row-->
+            <hr />
+            <div class="d-flex flex-wrap flex-row-reverse">
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Barcelona</h4>
+                        <p>Hotel ubicado en pleno centro de barcelona a pocos metros de la playa.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <!--final hotel Barcelona-->
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Buenos Aires</h4>
+                        <p>Hotel ubicado en pleno centro.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <!--final hotel Buenos Aires-->
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Lima</h4>
+                        <p>Hotel ubicado en pleno centro.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <!--final hotel Lima-->
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Río de Janeíro</h4>
+                        <p>Hotel ubicado en pleno centro de Río de Janeŕo a pocos metros de la playa.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <!--final hotel Río de Janeíro-->
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel La Paz</h4>
+                        <p>Hotel ubicado en pleno centro.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <!--final hotel La Paz-->
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel Madrid</h4>
+                        <p>Hotel ubicado en pleno centro.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <!--final hotel Madrid-->
+                <div class="card-hotel d-flex flex-column justify-content-between">
+                    <div>
+                        <h4>Hotel San Pablo</h4>
+                        <p>Hotel ubicado en pleno centro.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-reserva">Reservar</button>
+                    </div>
+                </div>
+                <!--final hotel San Pablo-->
+            </div>
+            <!--fin row reverse-->
+        </div>
+        <!--fin container-->
+    </main>
 </body>
 
+<footer>
+    <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+            <a href="http://www.facebook.com">Facebook</a>
+            <a href="http://www.twitter.com">Twitter</a>
+            <a href="http://www.instagram.com">Instagram</a>
+            <a href="http://www.google.com">Google+</a>
+        </div>
+        <div class="col-sm-4">
+            <address>
+                <h3>Oficina Central</h3>
+                <p>Tucuman 834, CABA, Argentína</p>
+                <p>+54911123456</p>
+                <p>contacto@guiahoteles.com</p>
+            </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column align-items-end">
+            <a href="http://www.facebook.com">Nosotros</a>
+            <a href="http://www.twitter.com">Precios</a>
+            <a href="http://www.instagram.com">Terminos y condiciones</a>
+            <a href="http://www.google.com">Contacto</a>
+        </div>
+    </div>
+</footer>
 
+<!--JavaScript opcional-->
+<!--JQuery, Bootstrap JS, Popper.JS-->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/popper.js/dist/popper-utils.min.js"></script>
 
 </html>
