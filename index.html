@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🪂Guia Hoteles</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
+
 <body>
-    <h1>Revisar el servidor lite-sever</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>🪂Guia Hoteles</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form action="index.php" method="post">
+                    <div class="form-group">
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Telefono</label>
+                        <input type="text" name="telefono" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Fecha de llegada</label>
+                        <input type="date" name="fecha_llegada" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Fecha de salida</label>
+                        <input type="date" name="fecha_salida" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Cantidad de personas</label>
+                        <input type="number" name="cantidad_personas" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Tipo de habitacion</label>
+                        <select name="tipo_habitacion" class="form-control">
+                            <option value="">Seleccione</option>
+                            <option value="Simple">Simple</option>
+                            <option value="Doble">Doble</option>
+                            <option value="Triple">Triple</option>
+                            <option value="Cuadruple">Cuadruple</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">¿Desea alojamiento?</label>
+                        <select name="alojamiento" class="form-control">
+                            <option value="">Seleccione</option>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="">¿Desea transporte?</label>
+                        <select name="transpote" class="form-control">
+                            <option value="">Seleccione</option>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
 </body>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+
 </html>
