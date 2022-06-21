@@ -1,11 +1,15 @@
 {
   "name": "proyectocoursera",
   "version": "1.0.0",
-  "description": "'Proyecto de practica con NodeJS de un curso de Coursera'",
+  "description": "Proyecto de practica con NodeJS de un curso de Coursera",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Omar Ramirez",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
